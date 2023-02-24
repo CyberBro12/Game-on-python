@@ -5,7 +5,7 @@ print("before starting the game i want to request that,"
 
 print("options: r, s, p")
 
-player2 = input(">")
+player2 = input(">").lower()
 
 player1 = ['r', 'p', 's']
 lst = rd.choice(player1)
