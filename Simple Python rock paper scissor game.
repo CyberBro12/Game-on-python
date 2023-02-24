@@ -1,0 +1,33 @@
+import random as rd
+
+print("before starting the game i want to request that,"
+      " pls don't use ay capital words, if you use you can get error.")
+
+print("options: r, s, p")
+
+player2 = input(">")
+
+player1 = ['r', 'p', 's']
+lst = rd.choice(player1)
+print(lst)
+
+if player2 == 'r' and lst == 'r':
+    print("bot choose rock and you choose rock also, it's a tie.")
+elif player2 == 'r' and lst == 's':
+    print("bot choose scissor and you choose rock so you win.")
+elif player2 == 'r' and lst == "p":
+    print("bot choose paper and you choose rock so bot win.")
+elif player2 == 'p' and lst == "r":
+    print("bot choose rock and you choose paper so you win.")
+elif player2 == 'p' and lst == "s":
+    print("bot choose scissor and you choose paper so bot win")
+elif player2 == 'p' and lst == "p":
+    print("bot choose paper and you choose paper so it's a tie.")
+elif player2 == 's' and lst == "r":
+    print("bot choose rock and you choose scissor so bot win.")
+elif player2 == 's' and lst == "s":
+    print("bot choose scissor and you chooser scissor so it's a tie.")
+elif player2 == 's' and lst == "p":
+    print("bot choose paper and you chooser scissor so bot win.")
+else:
+    print("Error!!!")
